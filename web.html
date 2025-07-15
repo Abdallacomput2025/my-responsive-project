@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUST</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <section class="header">
+      <nav>
+        <div class="logo">
+          <a href="web.html"><img src="image/just logo.png" /></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Academic</a></li>
+            <li><a href="">Course</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="content-box">
+        <p>Home of Quality Education</p>
+        <h1>Jamhuriya University Of Science and Technology</h1>
+        <a href="" class="hero-btn">About JUST University</a>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about">
+      <h1>About us</h1>
+      <p>
+        We provide a quality oriented education to our students.
+      </p>
+      <div class="row">
+        <div class="flex-left">
+          <h3>
+            We are different and we like it that way. JUST is professionally
+            oriented university.
+          </h3>
+          <p>
+            Our academic staff is not only some of the smartest but passionate
+            about providing students with up to date curriculums and text books
+            and producing experienced, engaged successful graduates.
+          </p>
+          <div class="info">
+            <div>
+              <span>4,000+</span>
+              <p>Graduates</p>
+            </div>
+            <div>
+              <span>5+</span>
+              <p>Faculties</p>
+            </div>
+            <div>
+              <span>35+</span>
+              <p>Programs</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-right">
+          <img src="image/calture.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="assets">
+      <div class="aligment">
+        <div class="grid-row">
+          <div>
+            <img src="image/student.png" />
+            <span>4800+</span>
+            <p>Students</p>
+          </div>
+          <div>
+            <img src="image/monitor.png" />
+            <span>10+</span>
+            <p>Labs</p>
+          </div>
+          <div>
+            <img src="image/reading-book.png" />
+            <span>450+</span>
+            <p>International Exams</p>
+          </div>
+          <div>
+            <img src="image/handshake.png" />
+            <span>20+</span>
+            <p>External Relations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="academic">
+        <h1>Our Academic Programs</h1>
+        <p>we create a learning environment that is engaging</p>
+        <div class="row">
+
+        </div>
+    </section> -->
+
+    <!-- ---------Javascript for menu toggle------------------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
