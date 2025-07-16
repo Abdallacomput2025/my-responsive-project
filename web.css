@@ -88,7 +88,7 @@ nav .logo a img {
   border: var(--primary-color);
 }
 
-.fa-solid {
+.fa-icons {
   display: none;
 }
 
@@ -164,45 +164,264 @@ nav .logo a img {
 }
 
 /* assets section */
-.assets{
-    width: 100%;
-    background-color: #2d368d;
-    margin: 100px 0;
+.assets {
+  width: 100%;
+  background-color: #2d368d;
+  margin: 100px 0;
 }
 
-.aligment{
-    width: 80%;
-    margin: auto;
-    padding: 100px 0;
+.aligment {
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
 }
 
-.grid-row{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-    justify-content: space-between;
-    text-align: center;
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: space-between;
+  text-align: center;
+  gap: 50px;
 }
 
-.grid-row div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    color: white;
+.grid-row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: white;
 }
-.grid-row div img{
-    width: 100px;
+.grid-row div img {
+  width: 100px;
 }
-.grid-row div span{
-    font-weight: 700;
-}
-
-.grid-row div p{
-    font-weight: 400;
-    color: #999;
+.grid-row div span {
+  font-weight: 700;
 }
 
+.grid-row div p {
+  font-weight: 400;
+  color: #999;
+}
+
+.academic {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.academic h1 {
+  font-size: 33px;
+  margin-bottom: 5px;
+}
+
+.academic p {
+  font-size: 20px;
+  color: #888;
+}
+.academic-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.academic-col {
+  flex-basis: 31%;
+  background-color: #118c00;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  text-align: left;
+  transition: 0.5s;
+}
+
+.academic-col:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  transform: scale(1.03);
+}
+
+.academic-col img {
+  width: 100%;
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px 6px rgba(33, 36, 40, 0.2);
+}
+.academic-col h3 {
+  color: #fff;
+  padding: 10px 0;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.academic-col .btn {
+  text-decoration: none;
+  color: white;
+  background: #2d368d;
+  padding: 13px 30px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 7px;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.academic-col .btn:hover {
+  background: white;
+  transform: translateX(20%);
+  color: #118c00;
+}
+
+.admission {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.admission h1 {
+  font-size: 34px;
+  margin-bottom: 5px;
+}
+.admission p {
+  color: #999;
+  margin-bottom: 50px;
+}
+
+.admission .admission-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.admission-col {
+  flex-basis: 31%;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 30px 20px 0;
+  margin-bottom: 30px;
+}
+
+.admission-col:hover{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5%);
+  transition: 0.5s;
+}
+
+.admission-col i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #118c00;
+  cursor: pointer;
+}
+.admission-col h3 {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+.admission-col p {
+  color: #444;
+  margin-top: 20px;
+}
+.admission-col .admission-btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #2d368d;
+  transition: 0.5s;
+}
+
+.admission-col .admission-btn:hover {
+  text-decoration: underline;
+}
+
+.admission-col:nth-child(3) {
+  background: #2d368d;
+  color: #fff;
+}
+.admission-col:nth-child(3) p {
+  color: #fff;
+}
+.admission-col:nth-child(3) .admission-btn {
+  color: white;
+}
+
+.admission-col .fa-download {
+  background: rgb(161, 159, 159, 0.3);
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+
+/* about addmision section */
+.about-admission{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.about-admission h1{
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.flex-img{
+  flex-basis: 50%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-img img{
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.flex-content{
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.flex-content h2{
+  font-size: 40px;
+  color: #2d368d;
+}
+
+.flex-content p{
+  line-height: 1.9;
+  margin: 30px 0 50px;
+  color: #444;
+}
+
+.flex-btn{
+  display: inline-block;
+  color: #2d368d;
+  transition: 0.5s;
+}
+
+.flex-btn:hover{
+  transform: translateX(20%);
+  color: #118c00;
+}
+
+.flex-btn a:hover{
+  transform: translateX(20%);
+  color: #118c00;
+}
+.flex-btn a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: #2d368d;
+}
 /* ----------------------------------------responsive------------------------------------------ */
 @media (max-width: 700px) {
   /* header responsive */
@@ -229,7 +448,7 @@ nav .logo a img {
   .nav-links ul li a:hover {
     color: #5cf647;
   }
-  nav .fa-solid {
+  nav .fa-icons {
     display: block;
     color: #fff;
     margin: 10px;
@@ -253,6 +472,21 @@ nav .logo a img {
 
   .info div {
     font-size: 35px;
+  }
+
+  /* academic section */
+  .academic-row {
+    flex-direction: column;
+  }
+
+  /* admission section */
+  .admission-row{
+    flex-direction: column;
+  }
+
+  /* about admission section */
+  .flex-row{
+    flex-direction: column;
   }
 }
 /* ----------------------------------------responsive------------------------------------------ */

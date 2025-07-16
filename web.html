@@ -7,6 +7,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="web.css" />
   </head>
@@ -18,7 +21,7 @@
           <a href="web.html"><img src="image/just logo.png" /></a>
         </div>
         <div class="nav-links" id="navLinks">
-          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <i class="fa-solid fa-xmark fa-icons" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -27,7 +30,7 @@
             <li><a href="">Contact</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <i class="fa-solid fa-bars fa-icons" onclick="showMenu()"></i>
       </nav>
       <div class="content-box">
         <p>Home of Quality Education</p>
@@ -39,9 +42,7 @@
     <!-- about section -->
     <section class="about">
       <h1>About us</h1>
-      <p>
-        We provide a quality oriented education to our students.
-      </p>
+      <p>We provide a quality oriented education to our students.</p>
       <div class="row">
         <div class="flex-left">
           <h3>
@@ -101,13 +102,91 @@
       </div>
     </section>
 
-    <!-- <section class="academic">
-        <h1>Our Academic Programs</h1>
-        <p>we create a learning environment that is engaging</p>
-        <div class="row">
+    <!-- academic section -->
 
+    <section class="academic">
+      <h1>Our Academic Programs</h1>
+      <p>we create a learning environment that is engaging</p>
+      <div class="academic-row">
+        <div class="academic-col">
+          <img src="image/it.png" />
+          <h3>Faculty of Computer and Information Technology</h3>
+          <a href="" class="btn">Explore Now</a>
         </div>
-    </section> -->
+        <div class="academic-col">
+          <img src="image/diploma-statistics.jpg" />
+          <h3>Master Of Business Administration (MBA HRM)</h3>
+          <a href="" class="btn">Explore Now</a>
+        </div>
+        <div class="academic-col">
+          <img src="image/medicine.png" />
+          <h3>Faculty of Medicine and Health Science</h3>
+          <a href="" class="btn">Explore Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- admission section -->
+    <section class="admission">
+      <h1>Admission Center</h1>
+      <p>Start your journey by exploring the options below.</p>
+
+      <div class="admission-row">
+        <div class="admission-col">
+          <i class="fa-solid fa-money-bill-1"></i>
+          <h3>Tuition Fee</h3>
+          <p>
+            The tuition fee covers the cost of your academic courses, access to
+            renowned faculty members, state-of-the-art facilities, libraries,
+            and other academic resources.
+          </p>
+          <a href="" class="admission-btn">view Program Fees</a>
+        </div>
+        <div class="admission-col">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Admission Requirements</h3>
+          <p>
+            The Admission Requirements covers the cost of your academic courses,
+            access to renowned faculty members, state-of-the-art facilities,
+            libraries, and other academic resources.
+          </p>
+          <a href="" class="admission-btn">view Details</a>
+        </div>
+        <div class="admission-col">
+          <i class="fa-solid fa-download"></i>
+          <h3>University Brochure</h3>
+          <p>
+            Download our comprehensive brochure for detailed program
+            information.
+          </p>
+          <a href="" class="admission-btn">Download Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Admission section -->
+    <section class="about-admission">
+      <h1>About Admission process</h1>
+      <div class="flex-row">
+        <div class="flex-img">
+          <img src="image/admiss.jpg" alt="" />
+        </div>
+        <div class="flex-content">
+          <h2>Our Admission🎓</h2>
+          <p>
+            Welcome to our University Admission Process Explanation video
+            section. In this video, we'll provide you with a comprehensive
+            overview of the admission process, from researching schools to
+            receiving an acceptance letter. Our expert panel of admissions
+            officers will share tips to increase your chances of being admitted.
+            Get ready to navigate the admission process with confidence!
+          </p>
+          <div class="flex-btn">
+            <a href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ---------Javascript for menu toggle------------------- -->
     <script>
