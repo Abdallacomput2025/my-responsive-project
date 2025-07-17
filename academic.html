@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUST</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="web.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <section class="header sub-header">
+      <nav>
+        <div class="logo">
+          <a href="web.html"><img src="image/just logo.png" /></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark fa-icons" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="web.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-icons" onclick="showMenu()"></i>
+      </nav>
+      <div class="content-box">
+        <h1 class="h1">Our Academic Programs</h1>
+        <p class="p"><a href="web.html">Home</a> / Our Academic Programs</p>
+      </div>
+    </section>
+
+    <!-- academic section -->
+
+    <section class="academic sub-academic">
+      <h1>Our Academic Programs</h1>
+      <p>we create a learning environment that is engaging</p>
+      <div class="academic-row">
+        <div class="academic-col">
+          <img src="image/it.png" />
+          <h3>Faculty of Computer and Information Technology</h3>
+          <a href="" class="btn">Explore Now</a>
+        </div>
+        <div class="academic-col">
+          <img src="image/diploma-statistics.jpg" />
+          <h3>Master Of Business Administration (MBA HRM)</h3>
+          <a href="" class="btn">Explore Now</a>
+        </div>
+        <div class="academic-col">
+          <img src="image/medicine.png" />
+          <h3>Faculty of Medicine and Health Science</h3>
+          <a href="" class="btn">Explore Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="contact">
+      <div class="contact-center">
+        <div class="contact-row">
+          <div class="contact-col-1">
+            <img src="image/logo_white.png" />
+            <p>
+              Jamhuriya University of Science and Technology (JUST) is private
+              institution and was officially established in Mogadishu, Somalia,
+              in 2011 by a group of Somali scholars and Intellectuals to fill
+              the existing vacuum (in the quality) in the higher education
+              system in Somalia by providing higher education of international
+              standards.
+            </p>
+            <div class="contact-icons">
+              <i class="fa-brands fa-facebook-f social-contact"></i>
+              <i class="fa-brands fa-instagram social-contact"></i>
+              <i class="fa-brands fa-x-twitter social-contact"></i>
+              <i class="fa-brands fa-linkedin-in social-contact"></i>
+            </div>
+          </div>
+          <div class="contact-col-2">
+            <h3>Quick Links</h3>
+            <div class="quick-links">
+              <a href="">About Us</a>
+              <a href="">Admission</a>
+              <a href="">Academics</a>
+              <a href="">Research</a>
+              <a href="">Upcoming Events</a>
+              <a href="">Blog & News</a>
+            </div>
+          </div>
+          <div class="contact-col-3">
+            <h3>Contact Details</h3>
+            <div class="detail">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Digfeer Street, Hodan District, Banadir Region</p>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-phone"></i>
+              <p>+2521656666</p>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@just.edu.so</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        &copy;JUST 2025 Developed byJTech Solutions. All Rights Reserved!
+      </footer>
+    </section>
+    <!-- ---------Javascript for menu toggle------------------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
